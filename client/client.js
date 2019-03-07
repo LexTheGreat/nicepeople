@@ -1,0 +1,24 @@
+var passify = [
+	"MEDIC",
+	"FIREMAN",
+	"PRIVATE_SECURITY",
+	"SECURITY_GUARD",
+	"PRISONER",
+	"GANG_1",
+	"GANG_2",
+	"GANG_9",
+	"GANG_10",
+	"AMBIENT_GANG_LOST",
+	"AMBIENT_GANG_MEXICAN",
+	"AMBIENT_GANG_FAMILY",
+	"AMBIENT_GANG_BALLAS",
+	"AMBIENT_GANG_MARABUNTE",
+	"AMBIENT_GANG_CULT",
+	"AMBIENT_GANG_SALVA",
+	"AMBIENT_GANG_WEICHENG",
+	"AMBIENT_GANG_HILLBILLY"
+];
+
+for(var i = 0; i < passify.length; i++) {
+	SetRelationshipBetweenGroups(1, GetHashKey(passify[i]), GetHashKey("PLAYER"));
+}
